@@ -1,0 +1,96 @@
+# Config schema version. Do not edit manually.
+config_version: 0
+# Project definitions (do not edit)
+Task: homecage
+scorer: zofiasus
+date: Nov20
+multianimalproject: true
+identity: false
+
+# Project path (change when moving around)
+project_path: /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20
+pose_config_path:
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: pytorch
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1695368175639_000279_ISOFEMALEGr2baseline.mp4
+  : crop: 0, 1200, 0, 500
+  ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1695368175639_000283_ISOFEMALEGr2baseline.mp4
+  : crop: 0, 1200, 0, 500
+  ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1686650679571_000279_MALEGr1CD1BASELINE.mp4
+  : crop: 0, 1200, 0, 500
+  ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1686650679571_000283_MALEGr1CD1BASELINE.mp4
+  : crop: 0, 1200, 0, 500
+  ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1697185307412_000167_MALEGr2ISOX6.mp4
+  : crop: 0, 1200, 0, 500
+bodyparts: MULTI!
+individuals:
+- mouse1
+- mouse2
+- mouse3
+uniquebodyparts: []
+multianimalbodyparts:
+- nose
+- head
+- ear_near
+- body_centre
+- tail_base
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0.0
+stop: 1.0
+numframes2pick: 20
+
+# Plotting configuration
+skeleton:
+- - nose
+  - head
+- - head
+  - ear_near
+- - head
+  - body_centre
+- - ear_near
+  - body_centre
+- - body_centre
+  - tail_base
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 6
+alphavalue: 0.7
+colormap: rainbow
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: albumentations
+default_track_method: ellipse
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+detector_batch_size: 1
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+# if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
+
+# These are very old parameters that are no longer used They are simply ignored.
+resnet:
+croppedtraining:

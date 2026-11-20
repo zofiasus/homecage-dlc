@@ -11,6 +11,9 @@ dlc_projects/**/videos/
 dlc_projects/**/dlc-models*/
 dlc_projects/**/evaluation-results*/
 dlc_projects/**/training-datasets/
+# Extracted frames are reproducible from the videos (imgNNNNN = frame index);
+# the labels (CollectedData_*.h5/.csv) and config.yaml ARE versioned.
+dlc_projects/**/labeled-data/**/*.png
 
 # Python / uv
 .venv/
