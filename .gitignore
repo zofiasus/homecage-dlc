@@ -1,0 +1,22 @@
+# Data: videos and HDF5 are far too big for git. Keep them on disk / shared storage.
+data/
+*.flv
+*.mp4
+*.avi
+*.zip
+
+# DeepLabCut project outputs (big). Labelled frames + config are versioned
+# separately if/when we decide to; see README.
+dlc_projects/**/videos/
+dlc_projects/**/dlc-models*/
+dlc_projects/**/evaluation-results*/
+dlc_projects/**/training-datasets/
+
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
