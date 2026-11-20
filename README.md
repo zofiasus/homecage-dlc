@@ -53,7 +53,8 @@ Created by `uv run scripts/create_dlc_project.py` in `dlc_projects/homecage-zofi
 Label:
 
 ```bash
-uv run python -m deeplabcut      # Load project → Label frames
+uv run scripts/label.py           # list frame folders + status
+uv run scripts/label.py 1         # open folder 1 in the labelling window
 ```
 
 ## Identity via RFID (plan)
