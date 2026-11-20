@@ -47,8 +47,14 @@ Created by `uv run scripts/create_dlc_project.py` in `dlc_projects/homecage-zofi
 - Bodyparts: `nose, head, ear_near, body_centre, tail_base` (`ear_near` = ear
   facing the camera). Mice are often heavily occluded: only label what you can
   see, never guess.
-- Starter set: 5 videos (000279 + 000283 of each baseline group, plus
-  MALEGr2ISOX6 000167), 20 k-means frames each = 100 frames.
+- Starter set: 5 videos, 20 frames each = 100 frames: MALEGr1 000279 + 000283,
+  ISO.FEMALE 000279 + 000287 (000283 had zero motion in 15 min), MALEGr2ISOX6 000167.
+- Frames: folder 1 by DeepLabCut k-means (mostly empty resting frames: mice
+  rest out of sight most of the time); folders 2-5 re-picked by **motion**
+  with `scripts/pick_active_frames.py` (17 active + 3 quiet frames, active
+  picks >= 10 s apart). Use this for any new videos.
+- Activity varies hugely between segments (0 to ~7 min of movement per 15 min);
+  MALEGr1 000280/000281 are the most active if more training data is needed.
 
 Label:
 

@@ -18,13 +18,13 @@ engine: pytorch
 video_sets:
   ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1695368175639_000279_ISOFEMALEGr2baseline.mp4
   : crop: 0, 1200, 0, 500
-  ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1695368175639_000283_ISOFEMALEGr2baseline.mp4
-  : crop: 0, 1200, 0, 500
   ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1686650679571_000279_MALEGr1CD1BASELINE.mp4
   : crop: 0, 1200, 0, 500
   ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1686650679571_000283_MALEGr1CD1BASELINE.mp4
   : crop: 0, 1200, 0, 500
   ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1697185307412_000167_MALEGr2ISOX6.mp4
+  : crop: 0, 1200, 0, 500
+  ? /Users/zofiasus/Documents/homecage-dlc/dlc_projects/homecage-zofiasus-2026-11-20/videos/1695368175639_000287_ISOFEMALEGr2baseline.mp4
   : crop: 0, 1200, 0, 500
 bodyparts: MULTI!
 individuals:
